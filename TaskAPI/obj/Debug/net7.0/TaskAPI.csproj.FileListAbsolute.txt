@@ -34,3 +34,6 @@ C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\obj\Debug\net7.0\ref\TaskAPI.dl
 C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\bin\Debug\net7.0\Dapper.dll
+C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\bin\Debug\net7.0\Dapper.Contrib.dll
+C:\Users\GFX\Desktop\Projetos\C#\TaskAPI\TaskAPI\bin\Debug\net7.0\MySqlConnector.dll
