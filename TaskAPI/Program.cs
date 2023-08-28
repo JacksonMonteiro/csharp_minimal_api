@@ -34,6 +34,30 @@ app.MapPost("/tasks", async (Task task, TaskAPIContext db) => {
     return Results.Created($"/tasks/{task.Id}", task);
 });
 
+app.MapPut("/tasks/{id}", async (int id, Task updatedTask, TaskAPIContext db) => {
+    var task = await db.Tasks.FindAsync(id);
+
+    if (task is null) {
+        return Results.NotFound();
+    }
+
+    task.Name = updatedTask.Name;
+    task.IsFinished = updatedTask.IsFinished;
+    await db.SaveChangesAsync();
+
+    return Results.NoContent();
+});
+
+app.MapDelete("/tasks/{id}", async (int id, TaskAPIContext db) => {
+    if (await db.Tasks.FindAsync(id) is Task task) {
+        db.Tasks.Remove(task);
+        await db.SaveChangesAsync();
+        return Results.Ok(task);
+    }
+
+    return Results.NotFound();
+});
+
 app.UseHttpsRedirection();
 app.Run();
 
